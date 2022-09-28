@@ -1,0 +1,31 @@
+.info {
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #787b86;
+  cursor: default;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  line-height: 19px;
+  padding: 0 18px 0 10px;
+  transition: background-color 0.35s ease;
+  white-space: nowrap;
+  margin: 0 -8px 8px;
+}
+.spanInfo {
+  box-sizing: border-box;
+  display: block;
+  line-height: 24px;
+  font-size: 16px;
+}
+.overviewTitle {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 12px;
+  padding: 0;
+  color: #b2b5be;
+}
+
+.main {
+  padding: 6px;
+}

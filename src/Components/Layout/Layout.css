@@ -1,0 +1,12 @@
+.layout {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  color: #d1d4dc;
+  font-size: 20px;
+}
+
+.title {
+  padding: 6px;
+}

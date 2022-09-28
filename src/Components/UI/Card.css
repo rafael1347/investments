@@ -1,0 +1,46 @@
+.card {
+  height: fit-content;
+  width: calc(50% - 10px);
+  color: #d1d4dc;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0px;
+  overflow-wrap: break-word;
+  background-image: none;
+  background-color: rgb(32, 41, 64);
+  background-clip: border-box;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+  box-shadow: rgb(0 0 0 / 14%) 0rem 0.125rem 0.125rem 0rem,
+    rgb(0 0 0 / 20%) 0rem 0.1875rem 0.0625rem -0.125rem,
+    rgb(0 0 0 / 12%) 0rem 0.0625rem 0.3125rem 0rem;
+  overflow: visible;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.chart {
+  width: 100%;
+  color: #d1d4dc;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0px;
+  overflow-wrap: break-word;
+  background-image: none;
+  background-color: rgb(32, 41, 64);
+  background-clip: border-box;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+  box-shadow: rgb(0 0 0 / 14%) 0rem 0.125rem 0.125rem 0rem,
+    rgb(0 0 0 / 20%) 0rem 0.1875rem 0.0625rem -0.125rem,
+    rgb(0 0 0 / 12%) 0rem 0.0625rem 0.3125rem 0rem;
+  overflow: visible;
+  height: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}

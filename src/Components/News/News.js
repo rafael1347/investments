@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
-import { Chart } from "react-google-charts";
-import Card from "../UI/Card";
 import "../UI/Card.css";
 import "../News/News.css";
 const APIKey = "QJLVOX8Q4FCOITTM";
 
 function News() {
-  const [responseObj, setResponseObj] = useState({});
   const [newsArray, setNewsArray] = useState([]);
   const [loading, setloading] = useState(true);
   useEffect(() => {
@@ -18,7 +15,6 @@ function News() {
     )
       .then((response) => response.json())
       .then((response) => {
-        setResponseObj(response);
         const theNewsArray = [];
 
         for (let i = 1; i < 5; i++) {
@@ -42,16 +38,14 @@ function News() {
   }
 
   return (
-    <ul>
-      {newsArray.map((newsArray) => (
-        <li>
-          <div>
-            <h3>{newsArray.title}</h3>
-            <p>{newsArray.summary}</p>
-          </div>
-        </li>
+    <div style={{ position: "relative", overflow: "hidden" }}>
+      {newsArray.map((newsArray, index) => (
+        <a className="News" key={index}>
+          <div className="title">{newsArray.title}</div>
+          <div className="description">{newsArray.summary}</div>
+        </a>
       ))}
-    </ul>
+    </div>
   );
 }
 

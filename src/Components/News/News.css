@@ -1,0 +1,35 @@
+.News {
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #d1d4dc;
+  display: block;
+  padding: 20px 8px;
+  transition: background-color 0.35s ease;
+}
+.News::after {
+  background-color: #e0e3eb;
+  content: "";
+  height: 1px;
+  width: 90%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.title {
+  overflow-wrap: break-word;
+  width: calc(100% - 68px);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+.description {
+  overflow-wrap: break-word;
+  width: calc(100% - 68px);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
